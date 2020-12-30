@@ -5,6 +5,7 @@ package pruebas;
  * <alopezp90@gmail.com>
  */
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.JFrame;
@@ -17,6 +18,7 @@ public class ScrollableJLabel {
     public static void main(String[] args) {
         
         JLabel textoLog = new JLabel("texto");
+        textoLog.setBackground(Color.white);
         textoLog.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
         //textoLog.setPreferredSize(new Dimension(180, 180));
         JScrollPane js = new JScrollPane(textoLog);
